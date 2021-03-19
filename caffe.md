@@ -4,7 +4,9 @@ docker pull airsplay/bottom-up-attention
 ```
 ```
 sudo docker run --gpus all -v /home/gaowen/videocaption/mscoco_dataset:/workspace/images:ro -v $(pwd)/data/mscoco_imgfeat:/workspace/features --rm -it airsplay/bottom-up-attention bash
+
 cd/workspace/features
+
 CUDA_VISIBILE_DEVICES=0 python extract_coco_image.py --split valid
 ```
 Or
