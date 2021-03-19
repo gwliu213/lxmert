@@ -9,6 +9,15 @@ cd/workspace/features
 
 CUDA_VISIBILE_DEVICES=0 python extract_coco_image.py --split valid
 ```
+```
+exit
+
+sudo docker start -i container_name
+
+apt-get update
+
+```
+
 Or
 ```
 sudo nvidia-docker run -it -v $(pwd):/workspace --name attention airsplay/bottom-up-attention bash
